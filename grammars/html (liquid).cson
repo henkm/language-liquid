@@ -1,10 +1,10 @@
 'fileTypes': [
-  'liquid'
+  'plate'
   'html'
 ]
 'foldingStartMarker': '(?x){%-?\\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment|block|paginate|schema|stylesheet|javascript)[^(%})]+-?%}'
 'foldingStopMarker': '(?x){%-?\\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment|endblock|endpaginate|endschema|endstylesheet|endjavascript)[^(%})]+-?%}'
-'name': 'HTML (Liquid)'
+'name': 'HTML (Plate)'
 'patterns': [
   {
     'begin': '({%-?)\\s*comment\\s(-?%})'
@@ -168,4 +168,4 @@
         'name': 'variable.other.liquid'
       }
     ]
-'scopeName': 'text.html.liquid'
+'scopeName': 'text.html.plate'
