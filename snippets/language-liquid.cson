@@ -93,7 +93,7 @@
   # Tags > Plate specific
   'content_for':
     'prefix': 'content_for'
-    'body': '{% content_for ${1:post-type-name} %}\n\t{% render_content %}\n{%- endcontent_for -%}'
+    'body': '{% content_for ${1:post-type-name}, class: "${2:optional-class-of-surrounding-container}" %}\n\t{% render_content %}\n{%- endcontent_for -%}'
     'description': 'Content renderer for objects inside the Plate Nested Layout Structure'
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
   'layout':
