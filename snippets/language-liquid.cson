@@ -93,7 +93,7 @@
   # Tags > Plate specific
   'content_for':
     'prefix': 'content_for'
-    'body': '{% content_for ${1:post-type-name}, class: "${2:optional-class-of-surrounding-container}" %}\n\t{% render_content %}\n{%- endcontent_for -%}'
+    'body': '{% content_for ${1:post-type-name}, class: "${2:optional-class-of-surrounding-container}", disable_handles: false %}\n\t{% render_content %}\n{%- endcontent_for -%}'
     'description': 'Content renderer for objects inside the Plate Nested Layout Structure'
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
   'layout':
@@ -121,6 +121,11 @@
     'body': '{{ "${1:library}" | global_asset_url | ${2:stylesheet_tag|script_tag} }}'
     'description': 'Returns the url of a ‘global asset’. Global assets are commonly used assets.'
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
+  'edit_text_inline':
+    'prefix': 'edit_text_inline'
+    'body': '{% edit_text_inline ${1:object.attribute} %}'
+    'description': 'Renders regular HTML of a text area value, but with an inline WYSIWYG html editor in the site’s edit mode. Accepts the content field’s name as an attribute.'
+    'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
 
 
 

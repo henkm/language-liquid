@@ -12,3 +12,4 @@ This package provides all the liquid tags and filters, plus some additional Plat
 - stylesheet_tag
 - script_tag
 - global_assets
+- edit_text_inline
