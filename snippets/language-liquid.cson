@@ -90,6 +90,34 @@
     'body': '${1:string} contains {2:substring}'
     'description': 'contains checks for the presence of a substring inside a string.'
     'descriptionMoreURL': 'https://shopify.github.io/liquid/basics/operators/#contains'
+  # Tags > Plate specific
+  'content_for':
+    'prefix': 'content_for'
+    'body': '{% content_for ${1:post-type-name} %}\n\t{% render_content %}\n{%- endcontent_for -%}'
+    'description': 'Content renderer for objects inside the Plate Nested Layout Structure'
+    'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
+  'layout':
+    'prefix': 'layout'
+    'body': '{% layout "${1:layout-name}" %}'
+    'description': 'Sets the theme layout. Whatever you pass must be a layout theme file in the layouts folder.'
+    'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
+  'tray':
+    'prefix': 'tray'
+    'body': '{% tray "${1:name-of-tray}" %}'
+    'description': 'Renders a Plate tray.'
+    'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
+  'stylesheet_tag':
+    'prefix': 'stylesheet_tag'
+    'body': '{{ "${1:link-to-stylesheet}" | asset_url | stylesheet_tag }}'
+    'description': 'Renders a Plate HTML stylesheet link-tag.'
+    'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
+  'script_tag':
+    'prefix': 'stylesheet_tag'
+    'body': '{{ "${1:link-to-js-file}" | asset_url | script_tag }}'
+    'description': 'Renders a Plate HTML javascript link-tag.'
+    'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
+
+
   # Tags > Comment
   'comment':
     'prefix': 'com'
