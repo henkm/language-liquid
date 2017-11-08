@@ -123,7 +123,7 @@
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
   'edit_text_inline':
     'prefix': 'edit_text_inline'
-    'body': '{% edit_text_inline ${1:object.attribute} %}'
+    'body': '{% edit_text_inline "${1:attribute}" %}'
     'description': 'Renders regular HTML of a text area value, but with an inline WYSIWYG html editor in the site’s edit mode. Accepts the content field’s name as an attribute.'
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/tags'
 
