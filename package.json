@@ -2,14 +2,14 @@
   "name": "language-plate",
   "version": "0.1.0",
   "private": false,
-  "description": "Plate language support for Atom.",
+  "description": "Plate language support for Atom, based on language-liquid",
   "keywords": [
     "language",
-    "liquid",
     "plate",
-    "shopify",
+    "liquid",
+    "startwithplate",
     "blogs",
-    "markdown",
+    "cms",
     "gfm"
   ],
   "author": "Henk Meijer <henk.meijer@eskesmedia.nl> (https://github.com/henkm)",
