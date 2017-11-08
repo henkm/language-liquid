@@ -112,10 +112,17 @@
     'description': 'Renders a Plate HTML stylesheet link-tag.'
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
   'script_tag':
-    'prefix': 'stylesheet_tag'
+    'prefix': 'script_tag'
     'body': '{{ "${1:link-to-js-file}" | asset_url | script_tag }}'
     'description': 'Renders a Plate HTML javascript link-tag.'
     'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
+  # Plate > default libraries
+    'global_assets':
+      'prefix': 'global_assets'
+      'body': '{{ "${1:library}" | global_asset_url | ${2:stylesheet_tag|script_tag} }}'
+      'description': 'Returns the url of a ‘global asset’. Global assets are commonly used assets.'
+      'descriptionMoreURL': 'https://platehub.github.io/docs/templating-reference/filters'
+
 
 
   # Tags > Comment
